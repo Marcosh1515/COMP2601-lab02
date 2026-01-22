@@ -8,16 +8,15 @@ public class IPod extends IDevice {
         this.maxVolDB = maxVolDB;
     }
 
-    @Override
     public void printDetails() {
-
+        System.out.printf("the purpose of this device is %s", this.getPurpose());
     }
 
     @Override
     public String toString() {
-        return "IPhone{" +
-                "noSongs=" + this.noSongs +
-                ", maxVolDB='" + this.maxVolDB + '\'' +
+        return "IPod{" +
+                "noSongs=" + noSongs +
+                ", maxVolDB=" + maxVolDB +
                 '}';
     }
 }
